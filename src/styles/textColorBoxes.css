@@ -1,0 +1,81 @@
+/* textColorBoxes.css */
+
+.boxContainerClassGray{
+    display: flex;
+    margin: 70px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxContainer {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los elementos para pantallas más pequeñas */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    padding: 20px; /* Espaciado general */
+    text-align: center; /* Centra el texto dentro de los divs */
+  }
+  
+  .textColorBoxImg {
+    width: 100%; /* Asegura que la imagen use todo el ancho del contenedor */
+    max-width: 50%; /* Limita el ancho máximo de la imagen */
+    height: 30%; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados opcional */
+  }
+  
+  .textColorBoxTextDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro del div */
+    margin: 20px 0; /* Espaciado vertical entre el texto y las imágenes */
+  }
+  
+  .minorTextContainer {
+    margin-top: 30px; /* Espaciado superior para el texto menor */
+    align-self: flex-start; /* Alinea a la izquierda */
+  }
+  
+  .minorText {
+    font-weight: bold;
+    font-family: serif;
+  }
+  
+  .textColorBoxTitle {
+    font-family: "Signika Negative, sans-serif";
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 10px 0; /* Espaciado vertical para el título */
+    max-width: 600px;
+  }
+  
+  .textColorBoxP {
+    color: gray;
+    font-family: "Helvetica Neue";
+    margin: 10px 0; /* Espaciado vertical para el párrafo */
+    max-width: 600px;
+  }
+  
+  .buttonContainer {
+    margin-top: 30px; /* Espaciado superior para el botón */
+  }
+  
+  .button {
+    background-color: #FFE01B;
+    border-radius: 10px;
+    padding: 10px 20px; /* Padding horizontal mayor */
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Media Queries para pantallas pequeñas */
+  
+  @media (max-width: 768px) {
+    .boxContainer {
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+      text-align: center;
+    }
+  
+    .textColorBoxImg {
+      display: none;
+    }
+  }

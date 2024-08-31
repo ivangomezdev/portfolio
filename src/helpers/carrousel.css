@@ -1,0 +1,92 @@
+/* Asegúrate de ajustar esto según tus necesidades */
+.CardPriceContainer {
+    border: solid 1px gray;
+    padding: 20px;
+    background-color: rgb(247, 250, 253);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .CartPricesButton {
+    padding: 10px;
+    width: 100%;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .CartPricesButton:hover {
+    background-color: yellow;
+  }
+  
+  .CarrouselCont{
+    display: none;
+  }
+
+
+  @media (max-width: 785px) {
+
+    .CarrouselCont {
+        display: block;
+        width: 100%;
+        max-width: 500px; /* Ajusta según sea necesario */
+        margin-left:100px;
+        position: relative;
+
+    }
+    
+    /* Estilo del contenedor del carrusel */
+    .slick-slider {
+        position: relative;
+    }
+    
+    /* Estilo del carrusel */
+    .slick-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Estilo de cada tarjeta */
+    .CardPriceContainer {
+        border: solid 1px gray;
+        padding: 20px;
+        background-color: rgb(247, 250, 253);
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    /* Botón de navegación */
+    .slick-prev, .slick-next {
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        color: white;
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    /* Dots for carousel */
+    .slick-dots {
+        bottom: -30px;
+    }
+      
+}
+
+@media (max-width: 635px) {
+    .CarrouselCont {
+       width: 70%;
+        margin-left:40px;
+       
+
+    }
+
+}

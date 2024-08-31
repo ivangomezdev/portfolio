@@ -1,0 +1,10 @@
+.image-container {
+    opacity: 0;
+    transform: translateY(20px); /* Desplaza la imagen hacia abajo para el efecto de entrada */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }

@@ -1,0 +1,42 @@
+@media (max-width: 1000px) {
+    .imgContact{
+      display: none;
+  }
+  .contactForm{
+    margin: 0 auto;
+  }
+}
+
+
+.mensaje-exito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fbeecab2;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 15px;
+  margin-top: 50px;
+  border-radius: 5px;
+  font-size: 40px;
+  position: relative;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+.checkmark {
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  border: 6px solid green;
+  border-radius: 50%;
+  padding: 0px;
+  
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}

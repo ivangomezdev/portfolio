@@ -1,0 +1,159 @@
+/* Base Styles for Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #f6f5f5; /* Fondo blanco por defecto */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000; /* Asegúrate de que el navbar esté sobre otros elementos */
+
+}
+
+.navbar-container {
+    display: flex;
+    padding:  5px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* Asegúrate de que el contenedor del menú hamburguesa esté posicionado correctamente */
+}
+
+.navbar-logo {   
+    font-size: 24px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000;
+    margin-left: -130px;
+}
+
+.navbar-menu {
+    list-style: none;
+    font-family: "Signika Negative,sans-serif";
+    font-weight:600;
+    display: flex;
+    gap: 30px;
+    
+    
+}
+
+
+
+.navbar-menu li {
+    margin: 0;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-family: "Signika Negative,sans-serif";
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Styles when Scrolled */
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.7); /* Blanco transparente */
+    backdrop-filter: blur(10px); /* Opcional: agrega un efecto de desenfoque para mejorar el contraste */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra para mejorar la visibilidad */
+}
+
+/* Styles for Navbar Toggler (Hamburger Menu) */
+.navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+}
+
+.navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+    top: -10px; /* Ajusta el espacio entre las líneas */
+}
+
+.navbar-toggler-icon::after {
+    top: 10px; /* Ajusta el espacio entre las líneas */
+}
+
+/* Styles for Active Menu */
+.navbar-menu.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsive Navbar */
+
+
+@media (max-width: 1310px) {
+    .navBarTextChanger{
+        display: none;
+    }
+
+    .navbar-logo {   
+        margin-left:0px
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .navbar-container{
+        justify-content: space-between;
+    }
+    .navBarTextChanger{
+        display: none;
+    }
+    .navbar-menu {
+        display: none; /* Oculta el menú en pantallas pequeñas por defecto */
+    }
+
+    .navbar-toggler {
+        display: block; /* Muestra el botón del menú hamburguesa en pantallas pequeñas */
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
+
+    .navbar-toggler.active .navbar-toggler-icon {
+        background-color: transparent; /* Cambia el color del icono cuando se abre el menú */
+    }
+
+    .navbar-toggler.active .navbar-toggler-icon::before {
+        transform: rotate(45deg); /* Cambia la rotación de la línea superior cuando el menú está abierto */
+    }
+
+    .navbar-toggler.active .navbar-toggler-icon::after {
+        transform: rotate(-45deg); /* Cambia la rotación de la línea inferior cuando el menú está abierto */
+    }
+}

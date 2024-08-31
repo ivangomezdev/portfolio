@@ -1,0 +1,17 @@
+.whatsAppDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: wheat;
+    font-weight: bold;
+    
+    background-color: #241C15;
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde el borde inferior según sea necesario */
+    right: 20px; /* Ajusta la distancia desde el borde derecho según sea necesario */
+    padding: 9px; /* Ajusta el espacio interno */
+    border-radius: 50px; /* Ajusta el radio del borde para bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    z-index: 1000;
+    height: 30px;
+}

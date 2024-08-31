@@ -1,0 +1,56 @@
+.gifsGalleryContainer {
+  text-align: center; /* Centra el texto y los elementos de la galería */
+  background-color: #050000;
+  margin-top: 100px;
+ 
+}
+
+.gifsGalleryContainer h1 {
+  padding-top: 150px;
+  color: rgb(251, 251, 251) !important;  
+  font-size: 2rem; /* Tamaño de fuente del título */
+  margin-bottom: 90px; /* Espacio debajo del título */
+  color: #333; /* Color del texto del título */
+}
+
+
+.gifsDiv {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajusta el tamaño de las columnas */
+  gap: 60px; /* Espacio entre los GIFs */
+  justify-content: center;
+  padding: 20px;
+}
+
+.gifContainer {
+  position: relative; /* Necesario para posicionar el tooltip */
+}
+
+.gifItem {
+  width: 100%; /* Ajusta el tamaño de las imágenes */
+  height: auto;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  display: block;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 120%; /* Posiciona el tooltip arriba del GIF */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75); /* Fondo oscuro para el tooltip */
+  color: white; /* Color del texto del tooltip */
+  padding: 5px;
+  border-radius: 5px; /* Bordes redondeados para el tooltip */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.gifContainer:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}

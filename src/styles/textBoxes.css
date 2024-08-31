@@ -1,0 +1,55 @@
+/* textBoxes.css */
+
+@keyframes colorChange {
+    0% {
+      background-color: #241C15;
+    }
+    50% {
+      background-color: #003;
+    }
+    100% {
+      background-color: #003;
+    }
+  }
+
+
+/* Contenedor principal de los cuadros de texto */
+.textBoxesCont {
+    display: grid; /* Usar CSS Grid para el diseño de cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crear columnas fluidas */
+    gap: 20px; /* Espaciado entre los cuadros */
+    padding: 20px; /* Espaciado interno del contenedor */
+  }
+  
+  /* Estilo para cada cuadro de texto */
+  .textBox {
+    background-color: #241C15; /* Fondo oscuro, cambia según sea necesario */
+    color: white; /* Texto en blanco, cambia según el color de fondo */
+    padding: 20px; /* Espaciado interno del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex; /* Usa Flexbox para alinear texto */
+    flex-direction: column; /* Alinea texto verticalmente */
+    justify-content: center; /* Centra verticalmente el contenido */
+    text-align: center; /* Centra el texto horizontalmente */
+    transition: background-color 1s ease; /* Suaviza el cambio de color */
+    
+  }
+  
+  .textBox:hover{
+    background-color: #003;
+  }
+
+  
+  /* Estilo para el título */
+  .textBoxTitle {
+    font-family: "Signika Negative, sans-serif";
+    font-size: 1.5em; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espaciado inferior */
+  }
+  
+  /* Estilo para el subtítulo */
+  .textBoxSubtitle {
+    font-family: "Means Web", sans-serif;
+    font-size: 1em; /* Tamaño de fuente para el subtítulo */
+  }
+  

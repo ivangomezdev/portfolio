@@ -1,0 +1,16 @@
+/* TypingEffect.css */
+.typing-effect {
+    font-family: "Signika Negative,sans-serif";
+    font-size: 31px;
+   background-color: #d7d7d770;
+   font-weight: bold;
+ 
+    border-right: 2px solid black; /* Cursor */
+    width: auto; /* Asegura que el texto se muestre completamente */
+    animation: blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+  }

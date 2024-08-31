@@ -1,0 +1,84 @@
+.cardStyleBox1{
+margin: 120px auto;
+
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.cardTextCont{
+    width: 35%;
+    text-align: left;
+}
+
+/* TypingEffect.css */
+.typing-effect {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    width: 0; /* Inicialmente ocultar el texto */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+  }
+
+
+  @media (max-width: 1300px) {
+    .cardTextCont{
+      width: 55%;
+      text-align: left;
+  }
+  }
+  
+  
+  @media (max-width: 1147px) {
+    .cardTextCont{
+      width: 100%;
+      text-align: left;
+  }
+  .typing-effect {
+    white-space:initial !important;
+    overflow:visible;
+    background-color: #FFFFFF !important;
+    display: flex !important;
+    animation: none !important
+  }
+  .imgResponsive{
+    max-width:50%; /* Hace que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+  }
+  }
+
+  @media (max-width: 979px) {
+    .cardTextCont{
+      width: 100%;
+      text-align: left;
+  }
+  .typing-effect {
+    white-space:initial !important;
+    overflow:visible;
+    background-color: #FFFFFF !important;
+    display: flex !important;
+  }
+  .imgResponsive{
+   display: none;
+  }
+  }

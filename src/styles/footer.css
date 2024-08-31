@@ -1,0 +1,64 @@
+.footer {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 40px 20px; /* Espaciado superior e inferior más grande para mayor separación */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacio entre secciones */
+    max-width: 1200px; /* Ancho máximo para centrar el contenido */
+    width: 100%; /* Ancho completo del contenedor */
+}
+
+.footer-section {
+    flex: 1 1 200px; /* Flexibilidad para que las secciones se ajusten */
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-socials a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.footer-socials a:hover {
+    color: #ccc;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px; /* Espaciado lateral para que el texto no toque los bordes */
+}
