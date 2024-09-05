@@ -37,7 +37,7 @@ const CartPrices = () => {
                             </>
                         )}
                     </div>
-                    <button className='CartPricesButton'><a href=''> Pedir ahora</a></button>
+                    <button className='CartPricesButton'><a href="https://wa.me/2616512211"> Pedir ahora</a></button>
                 </div>
             ))}
             
