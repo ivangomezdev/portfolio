@@ -9,7 +9,7 @@ const WhatsappIcon = () => {
   return (
     <div className='whatsAppDiv'>
         <ChatBubbleOutlineIcon fontSize='small' />
-     <a style={{textDecoration:"none",color:"whitesmoke"}} href="www.wa.me/2616512211" target="_blank" rel="noopener noreferrer" >Representante</a>
+     <a style={{textDecoration:"none",color:"whitesmoke"}} href="https://wa.me/2616512211" target="_blank" rel="noopener noreferrer" >Representante</a>
       </div>
   );
 };
